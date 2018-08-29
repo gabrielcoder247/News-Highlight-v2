@@ -1,1 +1,33 @@
-{% import 'base.html'%}
+{% extends 'bootstrap/base.html' %}
+{% import 'macros.html' as macro %}
+
+
+<!-- Styles Block -->
+{% block styles %}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/source.css')}}">
+{% endblock %}
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">sources</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td>
+            {{ macro.displayArticlesList(sources) }}
+        </td>
+        
+      </tr>
+      
+     
+    </tbody>
+  </table>
+
