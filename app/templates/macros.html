@@ -2,16 +2,13 @@
 {% extends 'base.html' %}
 {% macro displaySourcesList(sources_list) %}
 	{% for source in sources_list %}
-	<a href="/source/{{source.id}}">{{source.title}}
-		<div class="col-md-2" class="source" style="margin: 18px;border: 3px solid #ccc;background-image: url('static/images/background1.jpg'); background-size: cover; background-color: lightgrey;height: 150px;padding: 60px 0px;border-radius: 4px;box-shadow: 0 0 25px grey">	
-				
-					<p class="text-center" style="font-style: bold;font-size: 18px;background-color: rgba(0,0,0,1);">{{source.name}}</p>
-			
+	<div class = 'col-sm-4 col-md-4 col-xl-4 col-lg-4 '>
+	<a href="/source/{{source.id}}">{{source.name}}</a>	
 		</div>
-	</a>
+	
 	{% endfor %}
 	
-{% endmacro %}					<div class="col-md-9">
+{% endmacro %}					
 
 
 {% macro displayArticlesList(articles_list) %}

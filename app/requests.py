@@ -31,7 +31,7 @@ def get_sources(category):
 		if get_sources_response['sources']:
 			sources_results_list = get_sources_response['sources']
 			sources_results = process_sources(sources_results_list)
-	print(sources_results)
+	# print(sources_results)
 	return sources_results
 
 def process_sources(sources_results):
@@ -60,10 +60,12 @@ def get_articles(source):
 	Function that gets the json response to our url request
 	'''
 	get_articles_url = articles_base_url.format(source,api_Key)
+	print(get_articles_url)
 
 	with urllib.request.urlopen(get_articles_url,data=None) as url:
 		get_articles_data = url.read()
 		get_articles_response = json.loads(get_articles_data)
+		print(get_articles_response)
 		articles_results = None
 
 		if get_articles_response['articles']:
