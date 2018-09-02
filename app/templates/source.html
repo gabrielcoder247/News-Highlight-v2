@@ -1,6 +1,7 @@
 
-{% extends 'bootstrap/base.html' %}
+{% extends 'base.html' %}
 {% import 'macros.html' as macro %}
+
 
 <!-- Styles Block -->
 {% block styles %}
@@ -17,7 +18,7 @@
         <!-- <h3><img src="../static/images/logo.jpg" alt="" width="150px" height="75px"> | {{id}} | Top News Articles</h3>
 		<hr /> -->
         <div class="row">
-        	   {{ macro.displayArticlesList(article) }}
+        	   {{ macro.displayArticlesList(articles) }}
 
         </div>
     </div>
