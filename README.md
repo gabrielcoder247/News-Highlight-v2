@@ -1,7 +1,9 @@
-News Source
-A simple app that lets you choose your preferred news source. View all the top headlines from the source.
+GABS NEWS
+-------------
+An app that helps you to view news source and top headlines from different source.
 
-The site welcomes you with a simple styled u.i, with a jumbotron. The buttons display the category of news sources to view from. Just;
+
+The site welcomes you with a simple styled u.i, with a jumbotron and toggleable card. The buttons display the category of news sources to view from and navigate to the main news source of your choice
 
 Tap a category to collapse a list of sources. You can tap it again to close the categories sources.
 Choose your preferred news source.
@@ -9,7 +11,9 @@ This will take you to that source's top headlines.
 Browse through the articles and get an description of each article.
 Finally click on the link to read the articles form source.
 What we used
-The technoligies used in building this site were
+
+TECHNOLOGIES USED
+-----------------
 
 HTML
 CSS
@@ -17,15 +21,17 @@ Python
 Flask
 Bootstrap 4
 News Api
-Click here to see the site.
+Jquery CDN
+Font awesome CDN.
 
-Authors
+AUTHORS
+---------
 Gabriel Nwachukwu
 
-Acknowledgments
-my mentors David and Latasha
-Patrick, Pascal, Joshua and their work on the google books api.
-This article http://cs.wellesley.edu/~azhou4/cs249/ipython/googlebooks_search.py
+ACKNOWLEDGEMENT
+----------------
+my mentors Sam, Gitu, and Cynthia
+
 License
 MIT License
 
