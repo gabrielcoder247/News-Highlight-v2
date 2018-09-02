@@ -43,5 +43,12 @@ def profile():
 	
 	return render_template('profile.html')
 
+@main.route('/contact')
+def contact():
+	'''
+	Views function that returns the contact page and it's data
+	'''
+	return render_template('contact.html')
+
 
 
