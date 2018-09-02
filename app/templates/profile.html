@@ -1,3 +1,13 @@
+{% extends 'base.html' %}
+
+
+
+{% block styles %}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/profile.css')}}">
+{% endblock %}
+{% block content %}
 <div class="home-doctors  clearfix">
 
         <div class="container">
@@ -15,7 +25,7 @@
 
 
 <!-- entry1 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
                         <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
 
                             <ul class="list-inline social-lists animate">
@@ -30,19 +40,19 @@
                             </figure>
 
                             <div class="text-content">
-                                <h5>Dr. Jeremy</h5>
+                                <h5>Dr. Jeremy</h5> -->
                                 <!-- <div class="for-border"></div> -->
-                                <h5><small>Dentist Title</small></h5>
+                                <!-- <h5><small>Dentist Title</small></h5>
                             </div>
                         </div>
                     </div>
-
+ -->
 
 
 
 
 <!-- entry2 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
                         <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
 
                             <ul class="list-inline social-lists animate">
@@ -57,18 +67,18 @@
                             </figure>
 
                             <div class="text-content">
-                                <h5>Dr. Jeremy</h5>
+                                <h5>Dr. Jeremy</h5> -->
                                 <!-- <div class="for-border"></div> -->
-                                <h5><small>Dentist Title</small></h5>
+                                <!-- <h5><small>Dentist Title</small></h5>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
 
 <!-- entry3 -->
-                    <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
                         <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
 
                             <ul class="list-inline social-lists animate">
@@ -83,12 +93,12 @@
                             </figure>
 
                             <div class="text-content">
-                                <h5>Dr. Jeremy</h5>
+                                <h5>Dr. Jeremy</h5> -->
                                 <!-- <div class="for-border"></div> -->
-                                <h5><small>Dentist Title</small></h5>
+                                <!-- <h5><small>Dentist Title</small></h5>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
@@ -106,13 +116,13 @@
                             </ul>
 
                             <figure>
-                                    <img width="670" height="500" src="http://somesweetphoto.smugmug.com/photos/i-VHdG3sd/0/O/i-VHdG3sd.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="doctor-2"> 
+                                    <img width="1000" height="1200" src="{{url_for('static', filename='images/fb1.jpg')}}" /> 
                             </figure>
 
                             <div class="text-content">
-                                <h5>Dr. Jeremy</h5>
+                                <h5>Mr Gabriel Nwachukwu</h5>
                                 <!-- <div class="for-border"></div> -->
-                                <h5><small>Dentist Title</small></h5>
+                                <h5><small>Software Developer</small></h5>
                             </div>
                         </div>
                     </div>
@@ -127,3 +137,4 @@
         </div>
 
     </div>
+    {% endblock %}
