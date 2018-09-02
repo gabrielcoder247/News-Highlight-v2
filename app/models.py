@@ -35,7 +35,7 @@ class Article:
 			3. description
 			4. url
 			5. urlToImage
-			6. date
+			6. publishedAt
 		'''
 		self.name = name
 		self.author = author
