@@ -6,3 +6,23 @@ h3{
 *{
   font-family: 'Quicksand', sans-serif;
 }
+
+
+/* 
+.navbar-default {
+    border-radius: 0;
+    border-color: rgba(43, 65, 65, 0.5);
+    background-color: rgba(43, 65, 65, 0.5);
+}
+
+.navbar-default .navbar-brand {
+    font-size: 3vw;
+    color: #F2F3D9;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FA7461;
+} */
