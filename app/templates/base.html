@@ -1,11 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome GABS NEWS  </title>
+        {% endif %}
+    </head>
+    <body>
+
 {% extends 'bootstrap/base.html' %}
 
 
-{% block navbar %}
+<!-- {% block navbar %}
     {% include 'navbar.html' %}
 {% endblock %}
 
-{% block content %}
+{% block content %} -->
 <!-- <footer class =" ">
         <h4>Powered by News API</h4>
     </footer> -->
@@ -75,3 +87,5 @@
 	</Footer>
 
 {% endblock %}
+</body>
+<html>

@@ -13,13 +13,13 @@ def index():
 	# Getting sources according to category
 	business_sources = get_sources('business')
 	general_sources = get_sources('general')
-	sport_sources = get_sources('sport')
+	sport_sources = get_sources('sports')
 	entertainment_sources = get_sources('entertainment')
 	technology_sources = get_sources('technology')
 
 	title = 'Home - Find the latest news highlights'
 
-	return render_template('index.html',title=title,business=business_sources,general=general_sources,entertainment=entertainment_sources,technology=technology_sources)
+	return render_template('index.html',title=title,business=business_sources,general=general_sources,sports=sport_sources, entertainment=entertainment_sources,technology=technology_sources)
 
 
 
