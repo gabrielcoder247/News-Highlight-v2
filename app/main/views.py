@@ -35,4 +35,13 @@ def source(id):
 
 	return render_template('source.html', title=title,id=source_id, articles=articles)
 
+@main.route('/profile')
+def profile():
+	'''
+	View function that returns the profile page and it's data
+	'''
+	
+	return render_template('profile.html')
+
+
 
