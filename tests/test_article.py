@@ -1,5 +1,5 @@
 import unittest
-from .models import Article
+from app.models import Article
 
 
 class TestArticle(unittest.TestCase):
@@ -23,4 +23,3 @@ def setUp(self):
 
 def test_instance(self):
     self.assertTrue(isinstance(self.new_article,Article))
-    
